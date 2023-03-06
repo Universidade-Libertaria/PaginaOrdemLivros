@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+
+  h3 {
+    text-align: center;
+    color: var(--gray-100);
+  }
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      padding: 0.2rem 0.5rem;
+      border-radius: 10px;
+      background-color: var(--gray-900);
+      color: var(--yellow);
+
+      &:hover {
+        background-color: var(--yellow);
+        color: var(--gray-900);
+      }
+    }
+  }
+}

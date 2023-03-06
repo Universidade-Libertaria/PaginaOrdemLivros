@@ -1,0 +1,10 @@
+.headerWrapper {
+  background-color: var(--gray-900);
+
+  .headerContainer {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
