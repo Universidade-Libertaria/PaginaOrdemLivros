@@ -18,7 +18,9 @@ export default function Home() {
 
       <Header />
       <div className={styles.wrapper}>
-        <Hero />
+        <main>
+          <Hero />
+        </main>
         <CTA />
         <Card />
       </div>

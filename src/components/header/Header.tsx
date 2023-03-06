@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header className={styles.headerWrapper}>
       <div className={styles.headerContainer}>
-        <Image src='/Logo.png' alt='Logo' width={180} height={48} />
+        <Image src='/Logo.svg' alt='Logo' width={280} height={75} />
       </div>
     </header>
   );
