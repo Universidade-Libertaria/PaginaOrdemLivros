@@ -14,42 +14,42 @@ type Card = {
 const arrayCards: Card[] = [
   {
     title: "Homem Economia e Estado com Poder e Mercado | Murray N. Rothbard",
-    image: "/filosofia.png",
+    image: "/homem-economia-e-estado-rothbard.png",
     categories: ["Economia", "TeoriaJurídica", "Agorismo", "Política"],
     order: { Política: 1, Economia: 1, TeoriaJurídica: 5, Agorismo: 3 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=9777",
   },
   {
     title: "O Mito da Defesa Nacional | Hans Hermann Hoppe",
-    image: "/economia.png",
+    image: "/o-mito-da-defesa-nacional.png",
     categories: ["TeoriaJurídica", "Política"],
     order: { Política: 2, TeoriaJurídica: 1 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=7900",
   },
   {
     title: "O Estado | Franz Oppenheimer",
-    image: "/filosofia.png",
+    image: "/O-Estado-Oppenheimer.png",
     categories: ["Economia", "TeoriaJurídica", "História", "Política"],
     order: { Política: 3, Economia: 6, TeoriaJurídica: 4, História: 2 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=19124",
   },
   {
     title: "Sistemas Legais Muito Diferentes Do Nosso | David Friedman",
-    image: "/etica.png",
+    image: "/sistemasLegais.png",
     categories: ["TeoriaJurídica", "Política", "História", "Economia"],
     order: { Política: 4, TeoriaJurídica: 2, História: 1, Economia: 7 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=19432",
   },
   {
     title: "Keynes: o Homem",
-    image: "/filosofia.png",
+    image: "/Keynes-Livros.png",
     categories: ["História"],
     order: { História: 7 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=18932",
   },
   {
     title: "Mises: Acadêmico, Criador e Herói",
-    image: "/economia.png",
+    image: "/misesHeois.png",
     categories: ["História", "Economia"],
     order: { História: 8, Economia: 5 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=18926",
@@ -57,59 +57,66 @@ const arrayCards: Card[] = [
   {
     title:
       "Contraeconomia: Fugindo das Garras Tecnocráticas do Estado | Broze e Konkin",
-    image: "/filosofia.png",
+    image: "/Contraeconomia-Fugindo-das-Garras-Tecnocraticas-do-Estado.png",
     categories: ["História", "Agorismo", "Política"],
     order: { Política: 5, História: 3, Agorismo: 1 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=18087",
   },
   {
     title: "O Socialismo | Ludwig von Mises",
-    image: "/filosofia.png",
+    image: "/socialismo-ludwig-von-mises.png",
     categories: ["Economia", "Política"],
     order: { Política: 6, Economia: 2 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=7593",
   },
   {
     title: "A Política e a Fé Cristã | Lucas Rosalem",
-    image: "/filosofia.png",
+    image: "/capa-a-politica-e-a-fe-crista.png",
     categories: ["História", "Política", "TeoriaJurídica"],
     order: { Política: 7, História: 4, TeoriaJurídica: 7 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=17922",
   },
   {
     title: "A Traição da Direita Americana | Murray Rothbard",
-    image: "/filosofia.png",
+    image: "/capa-a-traicao-da-direita-americana.png",
     categories: ["História", "Política"],
     order: { Política: 8, História: 9 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=16052",
   },
   {
     title: "O Alvorecer da Liberdade – O que é Liberdade?",
-    image: "/filosofia.png",
+    image: "/alvorecer-da-liberdade.png",
     categories: ["Economia", "Política", "TeoriaJurídica"],
     order: { Política: 9, Economia: 4, TeoriaJurídica: 3 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=13866",
   },
   {
     title: "Bastiat, Ainda Invicto | Frédéric Bastiat",
-    image: "/filosofia.png",
+    image: "/bastiat-ainda-invicto.png",
     categories: ["História", "Política"],
     order: { Política: 10, História: 5 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=7931",
   },
   {
     title: "Revolução Satoshi | Wendy McElroy",
-    image: "/filosofia.png",
+    image: "/revolucao-satoshi.png",
     categories: ["Agorismo", "Política"],
     order: { Política: 11, Agorismo: 2 },
     href: "https://universidadelibertaria.com.br/loja/page/2/?add-to-cart=10685 ",
   },
   {
     title: "Pelo Fim do Banco Central | Rothbard",
-    image: "/filosofia.png",
+    image: "/pelo-fim-do-banco-central.png",
     categories: ["Economia", "Política", "TeoriaJurídica", "História"],
     order: { Política: 12, Economia: 3, TeoriaJurídica: 6, História: 6 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=17489",
+  },
+  {
+    title: "Todos os Livros",
+    image: "/Todos-os-Livros.png",
+    categories: ["Todos"],
+    order: { Todos: 1 },
+    href: "https://universidadelibertaria.com.br/loja/?add-to-cart=9777",
   },
 ];
 
@@ -130,6 +137,12 @@ export function Card() {
       <div className={styles.categoriesContainer}>
         <nav>
           <ul>
+            <li
+              className={selectedCategory === "Todos" ? styles.active : ""}
+              onClick={() => handleCategoryChange("Todos")}
+            >
+              Todos os Livros
+            </li>
             <li
               className={selectedCategory === "Política" ? styles.active : ""}
               onClick={() => handleCategoryChange("Política")}
@@ -172,8 +185,9 @@ export function Card() {
             initial={{ x: -500, opacity: 0, scale: 0.5 }}
             animate={{ x: 0, opacity: 1, scale: 1 }}
             transition={{ duration: 1.5 }}
+            key={card.title}
           >
-            <div key={card.title}>
+            <div>
               <h4>
                 {card.order[selectedCategory]} - {card.title}
               </h4>

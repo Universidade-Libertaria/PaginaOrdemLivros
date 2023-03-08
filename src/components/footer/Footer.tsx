@@ -4,6 +4,7 @@ import {
   InstagramLogo,
   YoutubeLogo,
   FacebookLogo,
+  DiscordLogo,
 } from "phosphor-react";
 import styles from "./footer.module.scss";
 
@@ -32,6 +33,9 @@ export function Footer() {
           target='_blank'
         >
           <FacebookLogo size={35} />
+        </Link>
+        <Link href='https://dao.universidadelibertaria.com.br/' target='_blank'>
+          <DiscordLogo size={35} />
         </Link>
       </div>
     </div>
