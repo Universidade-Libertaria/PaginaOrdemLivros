@@ -7,6 +7,7 @@
 
   h1 {
     font-family: "Lobster", cursive;
+    text-align: center;
   }
 
   .heroContainer {
@@ -70,6 +71,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img {
+      }
     }
   }
 }
@@ -79,10 +83,12 @@
     .heroContainer {
       flex-direction: column;
       gap: 2rem;
+      justify-content: center;
+      align-items: center;
 
       .ctaContainer {
         max-width: 100%;
-        padding: 1rem 1rem;
+        padding: 0 5rem;
       }
     }
   }

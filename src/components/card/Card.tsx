@@ -35,7 +35,7 @@ const arrayCards: Card[] = [
   },
   {
     title: "Sistemas Legais Muito Diferentes Do Nosso | David Friedman",
-    image: "/sistemasLegais.png",
+    image: "/sistemas.png",
     categories: ["TeoriaJurídica", "Política", "História", "Economia"],
     order: { Política: 4, TeoriaJurídica: 2, História: 1, Economia: 7 },
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=19432",
@@ -84,7 +84,8 @@ const arrayCards: Card[] = [
     href: "https://universidadelibertaria.com.br/loja/?add-to-cart=16052",
   },
   {
-    title: "O Alvorecer da Liberdade – O que é Liberdade?",
+    title:
+      "O Alvorecer da Liberdade – O que é Liberdade? | Universidade Libertária",
     image: "/alvorecer-da-liberdade.png",
     categories: ["Economia", "Política", "TeoriaJurídica"],
     order: { Política: 9, Economia: 4, TeoriaJurídica: 3 },

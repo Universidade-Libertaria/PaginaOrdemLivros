@@ -23,7 +23,7 @@ export function Hero() {
           <div className={styles["black-line-right"]}></div>
         </div>
         <div className={styles.imageContainer}>
-          <Image src='/avatar.svg' alt='imagem' width={450} height={450} />
+          <Image src='/avatar3.png' alt='imagem' width={450} height={450} />
         </div>
       </div>
     </div>
