@@ -117,7 +117,7 @@ const arrayCards: Card[] = [
     image: "/Todos-os-Livros.png",
     categories: ["Todos"],
     order: { Todos: 1 },
-    href: "https://universidadelibertaria.com.br/loja/?add-to-cart=9777",
+    href: "https://universidadelibertaria.com.br/categoria-produto/pre-venda/?add-to-cart=10741",
   },
 ];
 
