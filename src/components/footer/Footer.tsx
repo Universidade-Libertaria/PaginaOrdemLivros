@@ -5,13 +5,14 @@ import {
   YoutubeLogo,
   FacebookLogo,
   DiscordLogo,
+  UsersThree,
 } from "phosphor-react";
 import styles from "./footer.module.scss";
 
 export function Footer() {
   return (
     <div className={styles.wrapper}>
-      <h3>Nossas Redes Sociais</h3>
+      <h3>Nossas Redes</h3>
       <div className={styles.buttonsContainer}>
         <Link href='https://twitter.com/UniversidadeLi3' target='_blank'>
           <TwitterLogo size={35} />
@@ -34,8 +35,11 @@ export function Footer() {
         >
           <FacebookLogo size={35} />
         </Link>
-        <Link href='https://dao.universidadelibertaria.com.br/' target='_blank'>
+        <Link href='https://discord.gg/universolibertario' target='_blank'>
           <DiscordLogo size={35} />
+        </Link>
+        <Link href='https://dao.universidadelibertaria.com.br/' target='_blank'>
+          <UsersThree size={35} />
         </Link>
       </div>
     </div>
